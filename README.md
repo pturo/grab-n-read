@@ -34,7 +34,7 @@ Like I mentioned before, this project was created to have fun and practice Angul
 
 ## License
 
-My project is under Apache 2.0 license. You can use some parts from my code but remember to credit me as an appreciation to my work! Thanks! Awoo!
+My project is under BSD-2-Clause license. You can use some parts from my code but remember to credit me as an appreciation to my work! Thanks! Awoo!
 
 © 2023 Paweł "Wilczeq/Vlk" Turoń
 
