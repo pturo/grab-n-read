@@ -1,27 +1,41 @@
-# GrabNRead
+# Grab'n'Read
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+## What's new?
 
-## Development server
+There's no new features at the moment.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## About project
 
-## Code scaffolding
+This project aims to practice Angular and improve my programming skills. I used newsapi.org for fetching news from different platforms like bbc.com or cnn.com. I created application ONLY for educational purposes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Screenshots below
 
-## Build
+Web-screen 1
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![screen_1](src/assets/img/01.png)
 
-## Running unit tests
+Web-screen 2
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![screen_2](src/assets/img/02.png)
 
-## Running end-to-end tests
+Mobile
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![screen_3](src/assets/img/03.png)
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Technologies used in the project
+
+- Angular CLI v15
+- Angular Material
+
+## Goals
+
+Like I mentioned before, this project was created to have fun and practice Angular ovreall. Maybe my app will be inspiration to some people.
+
+## License
+
+My project is under Apache 2.0 license. You can use some parts from my code but remember to credit me as an appreciation to my work! Thanks! Awoo!
+
+© 2023 Paweł "Wilczeq/Vlk" Turoń
+
+

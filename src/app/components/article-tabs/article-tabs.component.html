@@ -1,0 +1,5 @@
+<button mat-raised-button [matMenuTriggerFor]="menu">Select news service</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="getNews('bbc.com')">BBC</button>
+  <button mat-menu-item (click)="getNews('cnn.com')">CNN</button>
+</mat-menu>

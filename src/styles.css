@@ -1,1 +1,108 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+/* Themes! */
+.theme-light {
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
+
+  background-color: var(--bg-black-900);
+  color: var(--text-black-900);
+}
+
+.theme-dark {
+  --bg-black-900: #151515;
+  --bg-black-100: #222222;
+  --bg-black-50: #393939;
+  --text-black-900: #ffffff;
+  --text-black-700: #e9e9e9;
+
+  background-color: var(--bg-black-900);
+  color: var(--text-black-900);
+}
+
+.theme-green {
+  --bg-black-900: #0a130a;
+  --bg-black-100: #132413;
+  --bg-black-50: #393939;
+  --text-black-full: #ffffff;
+  --text-black-900: limegreen;
+  --text-black-700: #e9e9e9;
+
+  background-color: var(--bg-black-900);
+  color: var(--text-black-full);
+}
+
+.theme-blue {
+  --bg-black-900: #0a0e13;
+  --bg-black-100: #131824;
+  --bg-black-50: #393939;
+  --text-black-full: #ffffff;
+  --text-black-900: blue;
+  --text-black-700: #e9e9e9;
+
+  background-color: var(--bg-black-900);
+  color: var(--text-black-full);
+}
+
+.theme-orange {
+  --bg-black-900: #130d0a;
+  --bg-black-100: #241913;
+  --bg-black-50: #393939;
+  --text-black-full: #ffffff;
+  --text-black-900: orange;
+  --text-black-700: #e9e9e9;
+
+  background-color: var(--bg-black-900);
+  color: var(--text-black-full);
+}
+
+.theme-yellow {
+  --bg-black-900: #13120a;
+  --bg-black-100: #242113;
+  --bg-black-50: #393939;
+  --text-black-full: #ffffff;
+  --text-black-900: yellow;
+  --text-black-700: #e9e9e9;
+
+  background-color: var(--bg-black-900);
+  color: var(--text-black-full);
+}
+
+.theme-red {
+  --bg-black-900: #130a0a;
+  --bg-black-100: #241313;
+  --bg-black-50: #393939;
+  --text-black-full: #ffffff;
+  --text-black-900: red;
+  --text-black-700: #e9e9e9;
+
+  background-color: var(--bg-black-900);
+  color: var(--text-black-full);
+}

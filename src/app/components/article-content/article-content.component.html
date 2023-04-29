@@ -1,0 +1,19 @@
+<div class="article-content">
+  <div class="row">
+    <div *ngIf="article">
+      <mat-card>
+        <mat-card-content>
+          <h2>{{ article.title }}</h2>
+          <p>{{ article.description }}</p>
+          <div class="img">
+            <img [src]="article.urlToImage" alt="">
+          </div>
+          <p>{{ article.content }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div *ngIf="!article">
+      <span class="info-message">Please, choose an article from the list to display its content.</span>
+    </div>
+  </div>
+</div>

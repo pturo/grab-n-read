@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <div class="row">
+    <div class="logo" routerLink="">Grab'n'Read</div>
+    <div class="theme-picker">
+      <button mat-raised-button [matMenuTriggerFor]="menu">Pick theme!</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="setTheme('theme-light')">Light</button>
+        <button mat-menu-item (click)="setTheme('theme-dark')">Dark</button>
+        <button mat-menu-item (click)="setTheme('theme-green')">Green</button>
+        <button mat-menu-item (click)="setTheme('theme-blue')">Blue</button>
+        <button mat-menu-item (click)="setTheme('theme-orange')">Orange</button>
+        <button mat-menu-item (click)="setTheme('theme-yellow')">Yellow</button>
+        <button mat-menu-item (click)="setTheme('theme-red')">Red</button>
+      </mat-menu>
+    </div>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,28 @@
+<div class="top-buttons">
+  <div class="choose-service">
+    <button mat-raised-button [matMenuTriggerFor]="menu">Select news service</button>
+    <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="loadArticles()">BBC</button>
+    <button mat-menu-item (click)="getNewsFromOtherDomain('cnn.com')">CNN</button>
+  </mat-menu>
+  </div>
+  <div class="refresh-articles">
+    <button mat-raised-button (click)="loadArticles()">Refresh</button>
+  </div>
+</div>
+<hr color="white">
+<div class="list-of-articles">
+  <div class="row">
+    <div *ngIf="isLoading" class="loading-spinner"></div>
+    <div *ngIf="articles.length > 0">
+      <div class="gap">
+        <mat-card *ngFor="let article of articles" (click)="onArticleSelected(article)">
+          <mat-card-title>{{ article.title }}</mat-card-title>
+        </mat-card>
+      </div>
+    </div>
+    <div *ngIf="articles.length == 0">
+      <span class="error-message">Couldn't find or load articles!</span>
+    </div>
+  </div>
+</div>

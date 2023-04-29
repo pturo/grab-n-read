@@ -1,0 +1,19 @@
+<div class="default-layout">
+  <div class="navbar">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="row">
+    <div class="article-section">
+      <div class="list-of-articles">
+        <app-list-of-articles (articleSelected)="onArticleSelected($event)"></app-list-of-articles>
+      </div>
+      <br>
+      <div class="article-content">
+        <app-article-content [article]="selectedArticle"></app-article-content>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <app-footer></app-footer>
+  </div>
+</div>

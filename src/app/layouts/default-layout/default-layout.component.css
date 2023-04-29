@@ -1,0 +1,70 @@
+/* HTML TAGS */
+
+/* DIV CLASSES */
+.default-layout {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  position: sticky;
+}
+
+.row {
+  padding: 10px 10px;
+  height: calc(100% - 120px);
+}
+
+.article-tabs {
+  width: 100%;
+  height: 48px;
+}
+
+.article-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.article-section .list-of-articles {
+  width: 30%;
+  height: calc(100% - 55px);
+}
+
+.article-section .article-content {
+  width: 70%;
+  height: 100%;
+}
+
+.footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  position: sticky;
+}
+
+/* OTHER SETTINGS */
+@media (max-width: 500px) {
+  .article-section {
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  .article-section .list-of-articles {
+    width: 100%;
+    height: 40%;
+    margin-bottom: 50px;
+  }
+
+  .article-section .article-content {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+  }
+}
