@@ -1,41 +1,103 @@
 # Grab'n'Read
 
-## What's new?
+Grab'n'Read to responsywna aplikacja do przeglądania wiadomości. Pobiera artykuły z serwisu News API i pozwala wybierać między BBC oraz CNN, odświeżać listę oraz przeglądać treść pojedynczego artykułu.
 
-There's no new features at the moment.
+Projekt powstał głównie w celach edukacyjnych i do ćwiczenia tworzenia aplikacji we frameworku Angular.
 
-## About project
+## Funkcje
 
-This project aims to practice Angular and improve my programming skills. I used newsapi.org for fetching news from different platforms like bbc.com or cnn.com. I created application ONLY for educational purposes.
+- pobieranie artykułów z BBC i CNN,
+- wybór źródła wiadomości z poziomu menu,
+- ręczne odświeżanie listy artykułów,
+- podgląd tytułu, opis, obrazu i treści wybranego artykułu,
+- wybór jednego z siedmiu motywów kolorystycznych,
+- responsywna lista i widok artykułu.
 
-Screenshots below
+## Zrzuty ekranu
 
-Web-screen 1
+### Widok na komputerze
 
-![screen_1](src/assets/img/01.png)
+![Widok aplikacji — pierwszy ekran](src/assets/img/01.png)
 
-Web-screen 2
+![Widok aplikacji — drugi ekran](src/assets/img/02.png)
 
-![screen_2](src/assets/img/02.png)
+### Widok na urządzeniu mobilnym
 
-Mobile
+![Widok aplikacji na telefonie](src/assets/img/03.png)
 
-![screen_3](src/assets/img/03.png)
+## Technologie
 
-
-## Technologies used in the project
-
-- Angular CLI v15
+- Angular 15
 - Angular Material
+- Angular CDK
+- RxJS
+- TypeScript
+- News API
 
-## Goals
+## Wymagania
 
-Like I mentioned before, this project was created to have fun and practice Angular ovreall. Maybe my app will be inspiration to some people.
+- Node.js
+- npm
+- Angular CLI 15
 
-## License
+## Uruchomienie projektu
 
-My project is under BSD-2-Clause license. You can use some parts from my code but remember to credit me as an appreciation to my work! Thanks! Awoo!
+1. Sklonuj repozytorium i przejdź do jego katalogu:
 
-© 2023 Paweł "Wilczeq/Vlk" Turoń
+```bash
+git clone https://github.com/pturo/grab-n-read.git
+cd grab-n-read
+```
+
+2. Zainstaluj zależności:
+
+```bash
+npm install
+```
+
+3. Zarejestruj się w [News API](https://newsapi.org/) i utwórz klucz API.
+
+4. Ustaw klucz w pliku `src/environments/environments.ts`:
+
+```ts
+export const environment = {
+  production: false,
+  apiKey: 'TWÓJ_KLUCZ_NEWS_API'
+};
+```
+
+> Nie commituj prawdziwego klucza API do publicznego repozytorium. W produkcyjnym Angularze warto przekazać klucz za pośrednictwem zabezpieczonego backendu lub mechanizmu zmiennych środowiskowych.
+
+5. Uruchom aplikację:
+
+```bash
+npm start
+```
+
+Aplikacja będzie dostępna pod adresem `http://localhost:4200/`.
+
+## Dostępne komendy
+
+```bash
+npm start       # uruchamia serwer deweloperski
+npm run build   # buduje aplikację w trybie produkcyjnym
+npm test        # uruchamia testy jednostkowe
+npm run watch   # buduje aplikację i obserwuje zmiany
+```
+
+## Konfiguracja API
+
+Aplikacja pobiera dane z endpointu `https://newsapi.org/v2/everything`. Domyślnie:
+
+- BBC: `domains=bbc.com&language=en`
+- CNN: `domains=cnn.com&language=en`
+
+Działanie może zależeć od limitów planu News API oraz dostępności usługi.
+
+## Licencja
+
+Projekt jest rozpowszechniany na warunkach licencji [BSD 2-Clause](LICENSE).
+
+© 2023 Paweł „WilczeqVlk” Turoń
 
 
